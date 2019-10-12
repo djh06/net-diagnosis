@@ -23,6 +23,10 @@
 
 * Fix bug: When the `tracert` reaches the destination host, the type of the icmp packet is filtered incorrectly. The replay package should be filtered instead of the timeout package.
 
+### v-1.0.12(2019.10.12)
+
+* Fix bug: when the tcp conn fails,there is no response for a long time.
+
 ## iOS网络诊断SDK版本更新记录
 
 ###v-1.0.3(2019.03.01)
@@ -46,3 +50,7 @@
 ### v-1.0.11(2019.07.01)
 
 * 修复bug: tracert到达目的主机时，过滤包的类型错误，应该直接过滤replay包而不是timeout包。
+
+### v-1.0.12(2019.10.12)
+
+* 修复bug: tcp连接不通时，长时间没有响应。
